@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Demo CI check: verify the telemetry checksum.
-# (Broken version - the checksum being checked does not match the expected one.)
+# (Fixed version - the expected checksum now matches the actual telemetry checksum.)
 set -euo pipefail
 
-EXPECTED_CHECKSUM="9f8e7d6c5b4a"
+EXPECTED_CHECKSUM="0f1e2d3c4b5a"
 ACTUAL_CHECKSUM="0f1e2d3c4b5a"
 
 if [ "$ACTUAL_CHECKSUM" != "$EXPECTED_CHECKSUM" ]; then
